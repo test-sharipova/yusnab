@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter'),
+        url(../fonts/Inter-Regular.ttf) format('ttf');
+        font-weight: 400;
+}
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter'),
+        url(../fonts/Inter-Medium.ttf) format('ttf');
+        font-weight: 500;
+}
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter'),
+        url(../fonts/Inter-SemiBold.ttf) format('ttf');
+        font-weight: 600;
+}
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter'),
+        url(../fonts/Inter-Bold.ttf) format('ttf');
+        font-weight: 700;
+}
+@import '_vari.scss';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Inter', 'Arial', sans-serif;
+    color: $text1;
+}
+.container {
+    width: 90%;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+.soc {
+    list-style-type: none;
+    display: flex;
+    gap: 12px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $blue;
+    color: #fff;
+    text-decoration: none;
+    width: fit-content;
+    padding: 21px 32px;
+    border-radius: 6px;
+    border: none;
+    transition: all .3s;
+    font-size: 16px;
+    &:hover {
+        opacity: .75;
+    }
+    &_transparent {
+        background: #fff;
+        border: 1px solid $blue;
+        color: $blue;
+        &:hover {
+            opacity: 1;
+            background: $blue;
+            color: #fff;
+        }
+    }
+}
+.title {
+    font-size: 36px;
+    font-weight: 700;
+}
+.subtitle {
+    font-size: 28px;
+}
+//margins
+.mb_12 {
+    margin-bottom: 12px;
+}
+.mb_16 {
+    margin-bottom: 16px;
+}
+.mb_24 {
+    margin-bottom: 24px;
+}
+.mb_32 {
+    margin-bottom: 32px;
+}
+
+//text {
+    .fs_14 {
+        font-size: 14px;
+    }
+.fs_18 {
+    font-size: 18px;
+}
+.fs_20 {
+    font-size: 20px;
+}
+.mobile {
+    display: none;
+}
+.lh_155 {
+    line-height: 155%;
+}
+.lh_171 {
+    line-height: 171%;
+}
+.gray {
+    color: $text2;
+}
+.fw_600 {
+    font-weight: 600;
+}
+//form
+.form {
+    &__input {
+        width: 221px;
+        height: 52px;
+            font-size: 14px;
+            background: #EDEDED;
+            border-radius: 6px;
+            border: none;
+            padding: 27px 16px 8px;
+            &:focus {
+                background: #fff;
+                outline: 1px solid $blue;
+            }
+        &__wrapper {
+            position: relative;
+        }
+    }
+    &__label {
+        position: absolute;
+        top: 8px;
+        left: 16px;
+        color: $text2;
+        font-size: 12px;
+    }
+}
+
+@import '_header.scss';
+@import '_promo.scss';
+@import '_table';
+@import '_price.scss';
+@import '_wins.scss';
+@import '_serv.scss';
+
+
+@import '_media.scss';
+

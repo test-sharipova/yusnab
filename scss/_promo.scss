@@ -1,0 +1,33 @@
+.promo {
+    position: relative;
+    background: #F1F1F1;
+    &__h {
+        font-size: 44px;
+        line-height: 131%;
+        font-weight: 700;
+    }
+    &__img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    &__content {
+        padding-top: 160px;
+        padding-bottom: 190px;
+        max-width: 535px;
+        position: relative;
+        z-index: 2;
+        
+    }
+    &__subtitle {
+        color: $text2;
+        line-height: 156%;
+        max-width: 430px;
+        font-weight: 400;
+    }
+}
