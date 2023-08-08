@@ -8,6 +8,9 @@
             justify-content: space-between;
             align-items: center;
         }
+        .btn {
+            width: 273px;
+        }
     }
     &__wrapper {
         display: flex;
@@ -20,6 +23,7 @@
         display: flex;
         gap: 12px;
         align-items: center;
+        letter-spacing: -0.5px;
         &:hover {
             opacity: .85;
         }
@@ -56,11 +60,12 @@
         color: $text1;
         text-decoration: none;
         margin-right: 63px;
+        letter-spacing: .8px;
     }
     &__mail {
         text-decoration: none;
         color: $text1;
-        margin-right: 47px;
+        margin-right: 38px;
         display: block;
         span {
             color: $text2;
@@ -86,7 +91,7 @@
     
     &__item {
         height: 100%;
-        margin-right: 34px;
+        margin-right: 40px;
     }
     &__link {
         text-decoration: none;

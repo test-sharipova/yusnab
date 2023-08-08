@@ -12,7 +12,7 @@
         min-height: 293px;
         border-radius: 12px;
         background: #F3F3F3;
-        padding: 48px 48px 32px 48px;
+        padding: 54px 48px 29px 48px;
         &__content {
             position: relative;
             display: flex;
@@ -24,6 +24,10 @@
                 flex-grow: 1;
                 max-width: 274px;
             }
+        }
+        .btn {
+            width: 136px;
+height: 52px;
         }
     }
     &__img {
@@ -38,11 +42,11 @@
         border-radius: 10px;
         background: #FFF;
         box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.15);
-        margin-top: 20px;
-        padding: 49px 84px 71px;
+        margin-top: 23px;
+        padding: 76px 80px 68px;
         display: flex;
         justify-content: space-between;
-        gap: 150px;
+        gap: 136px;
         &__content {
             max-width: 379px;
         }

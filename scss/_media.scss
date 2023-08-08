@@ -75,6 +75,12 @@
             grid-template-columns: 220px 200px 1fr;
         }
     }
+    .map {
+        &__wrapper {
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+    }
 }
 @media screen and (max-width:768px) {
     .desktop {
@@ -290,6 +296,25 @@
                     width: 100%;
                 }
             
+        }
+    }
+    .map {
+        &__block {
+            width: 100%;
+            height: auto;
+            padding: 16px;
+            .wrapper {
+                flex-wrap: wrap;
+                gap: 8px;
+            }
+            .fs_20 {
+                font-size: 16px;
+            }
+        }
+    }
+    footer {
+        .wrapper {
+            flex-wrap: wrap;
         }
     }
 }

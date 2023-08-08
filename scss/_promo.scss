@@ -3,7 +3,7 @@
     background: #F1F1F1;
     &__h {
         font-size: 44px;
-        line-height: 131%;
+        line-height: 117%;
         font-weight: 700;
     }
     &__img {
@@ -29,5 +29,10 @@
         line-height: 156%;
         max-width: 430px;
         font-weight: 400;
+        letter-spacing: .68px;
+    }
+    .btn {
+        width: 274px;
+        letter-spacing: 1.65px;
     }
 }
