@@ -1,0 +1,111 @@
+.about {
+    
+    background: #F3F3F3;
+    padding: 80px 0;
+    &__wrapper {
+        display: flex;
+        gap: 42px;
+        &:nth-child(1) {
+            margin-bottom: 63px;
+        }
+        &:nth-child(2) {
+            gap: 93px;
+        }
+    }
+    &__content {
+        max-width: 555px;
+    }
+    &__slider {
+        width: 568px;
+    }
+    &__img {
+        width: 568px;
+        position: relative;
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    &__slider {
+        position: relative;
+        &__logo {
+            position: absolute;
+            top: 41px;
+            left: 46px;
+            width: 182px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .slick-arrow {
+        border: none;
+        background: transparent;
+        position: absolute;
+        top: 50px;
+        cursor: pointer;
+        opacity: .5;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    .slick-next {
+        right: 48px;
+    }
+    .slick-prev {
+        right: 132px;
+        z-index: 3;
+    }
+    &__row {
+        display: grid;
+        grid-template-columns: 220px 363px 1fr;
+        align-items: center;
+        border-bottom: 1px solid #E0E0E0;
+        
+        height: 49px;
+        .btn_transparent {
+            height: 36px;
+            padding: 8px 12px;
+        }
+    }
+    &__btns {
+        display: flex;
+        gap: 12px;
+    }
+    &__emetall {
+        padding: 38px 48px;
+        border-radius: 10px;
+        background: #FFF;
+        box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.15);
+
+        display: flex;
+        align-items:center;
+        justify-content: space-between;
+        .btn_transparent {
+            padding: 16px 32px;
+            text-align: center;
+        }
+    }
+    &__name {
+        &__blue {
+            color: $blue;
+            font-size: 18px;
+            line-height: 155%;
+            display: flex;
+            align-items: center;
+            margin-bottom: 6px;
+            gap: 14px;
+            &::before {
+                content: '';
+                background: url(../img/snow_check.svg) no-repeat center;
+                width: 17px;
+                height: 17px;
+                background-size: contain;
+                display: block;
+            }
+        }
+        .fs_15 {
+            padding-left: 31px;
+        }
+    }
+}

@@ -61,7 +61,7 @@ body {
         opacity: .75;
     }
     &_transparent {
-        background: #fff;
+        background: transparent;
         border: 1px solid $blue;
         color: $blue;
         &:hover {
@@ -91,10 +91,16 @@ body {
 .mb_32 {
     margin-bottom: 32px;
 }
+.mb_40 {
+    margin-bottom: 40px;
+}
 
 //text {
     .fs_14 {
         font-size: 14px;
+    }
+    .fs_15 {
+        font-size: 15px;
     }
 .fs_18 {
     font-size: 18px;
@@ -150,7 +156,9 @@ body {
 @import '_price.scss';
 @import '_wins.scss';
 @import '_serv.scss';
-
+@import '_prov.scss';
+@import '_about.scss';
+@import '_form.scss';
 
 @import '_media.scss';
 

@@ -27,6 +27,23 @@
             padding: 24px;
         }
     }
+    .prov {
+        &__wrapper {
+            flex-wrap: wrap;
+            .mb_24 {
+                margin-bottom: 16px;
+            }
+        }
+    }
+    .about{
+        &__wrapper {
+            &:nth-child(2) {
+                gap: 36px;
+                flex-wrap: wrap;
+            }
+        }
+        
+    }
 }
 @media screen and (max-width:1023px) {
     .price {
@@ -45,6 +62,17 @@
         &__quest {
             flex-wrap: wrap;
             row-gap: 24px;
+        }
+    }
+    .about {
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+        &__requisites {
+            overflow-x: auto;
+        }
+        &__row {
+            grid-template-columns: 220px 200px 1fr;
         }
     }
 }
@@ -184,6 +212,84 @@
         &__quest {
             display: flex;
             flex-wrap: wrap;
+            &__phone {
+                order: 6;
+                &:after {
+                    display: none;
+                }
+            }
+            .fs_14 {
+                order: 5;
+            }
+            .form__input {
+                margin-bottom: 8px;
+            }
+            &__contact {
+                display: flex;
+                flex-direction: column;
+            }
+            .policy {
+                margin-top: 8px;
+                line-height: 120%;
+                margin-bottom: 16px;
+            }
+        }
+        
+    }
+    .prov {
+        padding: 60px 0;
+        &__logo {
+            max-width: 200px;
+            margin-bottom: 16px;
+        }
+        &__wrapper {
+            margin-bottom: 40px;
+        }
+    }
+    .about {
+        &__slider {
+            width: 100%;
+            &__logo {
+                top: 23px;
+    left: 23px;
+    width: 109px;
+            }
+        }
+        &__img {
+            width: 100%;
+        }
+        &__row {
+            grid-template-columns: 1fr 1fr;
+            height: auto;
+            min-height: 49px;
+            padding: 14px 0;
+        }
+        &__btns {
+            width: 100%;
+            grid-column: 1/-1;
+            margin-top: 14px;
+            
+        }
+        &__emetall {
+            flex-wrap: wrap;
+            gap: 16px;
+            padding: 24px;
+        }
+    }
+    .form {
+        textarea {
+            width: 100%;
+        }
+        padding: 40px 0;
+        &__wrapper {
+            
+                flex-wrap: wrap;
+                margin-bottom: 0;
+                gap: 12px;
+                .btn {
+                    width: 100%;
+                }
+            
         }
     }
 }
