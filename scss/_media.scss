@@ -1,4 +1,10 @@
 @media screen and (max-width:1442px) {
+    .header {
+        &__wrapper {
+            flex-wrap: wrap;
+    gap: 16px;
+        }
+    }
     .table {
         .form__input {
             width: 200px;
@@ -43,6 +49,12 @@
             }
         }
         
+    }
+    .footer {
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
     }
 }
 @media screen and (max-width:1023px) {
@@ -312,9 +324,10 @@
             }
         }
     }
-    footer {
-        .wrapper {
+    .footer {
+        &__wrapper {
             flex-wrap: wrap;
+            gap: 16px;
         }
     }
 }

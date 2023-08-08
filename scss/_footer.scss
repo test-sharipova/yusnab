@@ -1,12 +1,17 @@
 footer {
     background: $text1;
     color: #fff;
-    padding: 56px 0 50px;
+    padding: 58px 0 50px;
+    letter-spacing: .5px;
     a {
         color: #fff;
         text-decoration: none;
     }
-    .wrapper {
-        gap: 16px;
+    
+}
+.footer {
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 553px 297px 1fr;
     }
 }

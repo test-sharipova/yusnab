@@ -54,7 +54,7 @@
                     <img src="img/logo.svg" alt="ЮжуралСнаб">
                 </a>
                 <a href="#" class="header__download2">Скачать актуальный прайс-лист</a>
-                <a href="+73513512219" class="header__phone">+ 7 (351) 351-22-19</a>
+                <a href="tel:+73513512219" class="header__phone">+ 7 (351) 351-22-19</a>
                 <a href="mailto:mail@8732.su" class="header__mail"><span>Пишите на почту</span>mail@8732.su</a>
                 <ul class="soc">
                     <li><a href="#"><img src="img/viber.svg" alt="Vieber"></a></li>
@@ -91,16 +91,19 @@
                 </h2>
                 <form action="#" class="table__form">
                     <div class="form__input__wrapper">
-                        <input class="form__input" type="text" id="diametr">
                         <label class="form__label" for="diametr">Диаметр</label>
+                        <input class="form__input" type="text" id="diametr">
+                        
                     </div>
                     <div class="form__input__wrapper">
-                        <input class="form__input" type="text" id="tol">
                         <label class="form__label" for="tol">Толщина стенки</label>
+                        <input class="form__input" type="text" id="tol">
+                        
                     </div>
                     <div class="form__input__wrapper">
                         <div class="form__label">ГОСТ, ОСТ, ТУ</div>
                         <select class="form__input">
+                            <option value="" selected></option>
                             <option value="8732-78">8732-78</option>
                             <option value="8732-78">8732-78</option>
                             <option value="8732-78">8732-78</option>
@@ -109,6 +112,7 @@
                     <div class="form__input__wrapper">
                         <div class="form__label">Марка стали</div>
                         <select class="form__input">
+                            <option value="" selected></option>
                             <option value="8732-78">30ХГСА</option>
                             <option value="8732-78">8732-78</option>
                             <option value="8732-78">30ХГСА</option>
@@ -491,7 +495,10 @@
                         <p class="fs_14">Или позвоните нам</p>
                         <p class="fs_20 fw_600">Заказ звонка</p>
                         <a href="tel:+73513512219" class="serv__quest__phone">+ 7 (351) 351-22-19</a>
-                        <input type="text" class="form__input" placeholder="Введите номер">
+                        <div class="form__input__wrapper">
+                            <input class="form__input" type="text" id="order" placeholder="">
+                            <label class="form__label" for="order">Введите номер</label>
+                        </div>
                         <button type="submit" class="btn">Отправить</button>
                         <p class="policy">Отправляя форму, вы даёте <a href="#">согласие на обработку своих данных</a></p>
                     </form>
@@ -530,7 +537,7 @@
             <div class="container">
                 <div class="about__wrapper">
                     <div class="about__content">
-                        <div class="title mb_32">О компании</div>
+                        <div class="title mb_36">О компании</div>
                         <p class="gray fs_18 lh_155 mb_24">
                             Наша компания предлагает широкий сортамент трубной и сортовой продукции различных заводов-производителей в наличии со склада,а профессиональные менеджеры помогут Вам не только по конкретной заявке, но и проконсультируют по заменам, если нужной позиции нет на складе.
                         </p>
@@ -628,7 +635,7 @@
         <sectoin class="form">
             <div class="container">
                <form action="#" class="form__form">
-                <h2 class="title mb_24">
+                <h2 class="title mb_26">
                     Отправьте заявку и узнайте актуальные цены в течение 30 минут
                 </h2>
                 <p class="fs_18 gray lh_155 mb_40">
@@ -649,7 +656,7 @@
                             <label class="form__label" for="email">Введите электронную почту</label>
                         </div>
                     </div>
-                    <textarea class="form__input"></textarea>
+                    <textarea class="form__input" placeholder="Введите"></textarea>
                 </div>
                 <div class="form__wrapper form__wrapper2">
                     <p class="policy">Отправляя форму, вы даёте <a href="#">согласие на обработку своих данных</a></p>
@@ -663,11 +670,11 @@
             
                 <div class="container">
                     <div class="map__wrapper">
-                        <h2 class="title">Контакты</h2>
+                        <h2 class="title lh_171">Контакты</h2>
                         <div class="map__block">
                           
                             <p class="fs_16 mb_8 gray">Телефон</p>
-                            <div class="wrapper_start mb_33">
+                            <div class="wrapper_start mb_26">
                                 <a href="tel:+73510000000" class="fs_20">+ 7 (351) 000-00-00</a>
                                 <ul class="soc">
                                     <li><a href="#"><img src="img/viber.svg" alt="Vieber"></a></li>
@@ -676,9 +683,9 @@
                                 </ul>
                             </div>
                             <p class="fs_16 mb_8 gray">Электронная почта</p>
-                            <a href="mailto:mail@8732.su" class="fs_20 mb_33">mail@8732.su</a>
+                            <a href="mailto:mail@8732.su" class="fs_20 mb_40">mail@8732.su</a>
                             <p class="fs_16 mb_8 gray">Адрес склада</p>
-                            <a href="https://goo.gl/maps/QLQjzFpSBcSoTrzQA" class="fs_20 mb_36">ул. Героев Танкограда, 52п</a>
+                            <a href="https://goo.gl/maps/QLQjzFpSBcSoTrzQA" class="fs_20 mb_40">ул. Героев Танкограда, 52п</a>
                             <div class="wrapper">
                                 <div class="map__img"><img src="img/map__img.png" alt="Фото со склада"></div>
                                 <div class="map__img"><img src="img/map__img2.png" alt="Фото со склада"></div>
@@ -692,7 +699,7 @@
         </section>
         <footer>
             <div class="container">
-                <div class="wrapper">
+                <div class="footer__wrapper">
                     <p class="fs_14 lh_142">
                         © ООО «Южуралснаб», 2023 <br>
                         Металлопрокат от производителя с доставкой по всей России

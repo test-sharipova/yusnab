@@ -43,25 +43,33 @@ height: 52px;
         background: #FFF;
         box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.15);
         margin-top: 23px;
-        padding: 76px 80px 68px;
+        padding: 55px 80px 76px;
         display: flex;
         justify-content: space-between;
         gap: 136px;
+        .subtitle {
+            padding-top: 21px;
+            letter-spacing: normal;
+        }
         &__content {
             max-width: 379px;
         }
         &__contact {
             display: grid;
             grid-template-columns: 1fr 1fr;
+            grid-template-rows: 24px;
             column-gap: 20px;
             .fs_14 {
                 grid-column: 2/3;
                 margin-bottom: 2px;
+                
             }
             .fs_20 {
                 grid-column: 1/2;
                 grid-row: 2/3;
                 margin-bottom: 18px;
+                margin-top: 4px;
+                letter-spacing: .45px;
             }
             .form__input {
                 grid-column: 1/2;
@@ -95,6 +103,7 @@ height: 52px;
             text-decoration: none;
             position: relative;
             display: block;
+            letter-spacing: .65px;
             &::after {
                 content: '';
                 background: url(../img/vector.svg) no-repeat center;
@@ -103,7 +112,7 @@ height: 52px;
                 background-size: contain;
                 display: block;
                 position: absolute;
-                right: 21px;
+                right: 36px;
                 top: 7px;
             }
         }

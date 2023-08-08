@@ -57,6 +57,7 @@ body {
     border: none;
     transition: all .3s;
     font-size: 16px;
+    cursor: pointer;
     &:hover {
         opacity: .75;
     }
@@ -80,6 +81,7 @@ body {
     font-size: 28px;
     font-weight: 600;
     letter-spacing: .6px;
+    
 }
 //margins
 .mb_8 {
@@ -96,6 +98,9 @@ body {
 }
 .mb_24 {
     margin-bottom: 24px;
+}
+.mb_26 {
+    margin-bottom: 26px;
 }
 .mb_32 {
     margin-bottom: 32px;
@@ -159,7 +164,8 @@ body {
         width: 221px;
         height: 52px;
             font-size: 14px;
-            background: #EDEDED;
+            background: #ededed;
+            
             border-radius: 6px;
             border: none;
             padding: 27px 16px 8px;
@@ -170,13 +176,18 @@ body {
         &__wrapper {
             position: relative;
         }
+        
     }
     &__label {
         position: absolute;
-        top: 8px;
+        top: 13px;
         left: 16px;
         color: $text2;
         font-size: 12px;
+    }
+    .form__input:focus ~ label {
+        top: 8px;
+        transition: all .3s;
     }
 }
 
