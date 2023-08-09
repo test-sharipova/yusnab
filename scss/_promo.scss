@@ -5,6 +5,7 @@
         font-size: 44px;
         line-height: 117%;
         font-weight: 700;
+        margin-bottom: 27px;
     }
     &__img {
         position: absolute;
@@ -29,10 +30,12 @@
         line-height: 156%;
         max-width: 430px;
         font-weight: 400;
-        letter-spacing: .68px;
+     
     }
     .btn {
         width: 274px;
-        letter-spacing: 1.65px;
+        height: 63px;
+    letter-spacing: 1px;
+    
     }
 }

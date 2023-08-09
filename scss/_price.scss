@@ -21,13 +21,13 @@ position: relative;
         display: flex;
         justify-content: space-between;
         max-width: 713px;
-        letter-spacing: 1.7px;
+
         .btn {
             gap: 12px;
             width: 357px;
             height: 52px;
             margin-bottom: 16px;
-            letter-spacing: .8px;
+           
         }
     }
     &__list {

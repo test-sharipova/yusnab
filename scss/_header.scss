@@ -9,13 +9,13 @@
             align-items: center;
         }
         .btn {
-            width: 273px;
+            width: 274px;
         }
     }
     &__wrapper {
         display: flex;
         align-items: center;
-        padding: 24px 0;
+        padding: 24px 0 24px;
     }
     &__download {
         text-decoration: none;
@@ -23,7 +23,7 @@
         display: flex;
         gap: 12px;
         align-items: center;
-        letter-spacing: -0.5px;
+     letter-spacing: -1px;
         &:hover {
             opacity: .85;
         }
@@ -37,14 +37,14 @@
             align-items: center;
         }
         &2 {
-            padding: 14px 24px;
+            padding: 13px 23px;
             line-height: 120%;
             color: $blue;
             border: 1px solid $blue;
             border-radius: 6px;
             text-decoration: none;
-            margin-right: 111px;
-            max-width: 273px;
+            margin-right: 96px;
+            max-width: 274px;
             font-size: 14px;
             text-align: center;
             &:hover {
@@ -60,13 +60,14 @@
         color: $text1;
         text-decoration: none;
         margin-right: 63px;
-        letter-spacing: .8px;
+       
     }
     &__mail {
         text-decoration: none;
         color: $text1;
-        margin-right: 38px;
-        display: block;
+        margin-right: 48px;
+    display: block;
+    letter-spacing: -1.1px;
         span {
             color: $text2;
             display: block;
@@ -91,7 +92,7 @@
     
     &__item {
         height: 100%;
-        margin-right: 40px;
+        margin-right: 35px;
     }
     &__link {
         text-decoration: none;

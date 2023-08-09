@@ -1,27 +1,27 @@
-@font-face {
-    font-family: 'Inter';
-    src: local('Inter'),
-        url(../fonts/Inter-Regular.ttf) format('ttf');
-        font-weight: 400;
-}
-@font-face {
-    font-family: 'Inter';
-    src: local('Inter'),
-        url(../fonts/Inter-Medium.ttf) format('ttf');
-        font-weight: 500;
-}
-@font-face {
-    font-family: 'Inter';
-    src: local('Inter'),
-        url(../fonts/Inter-SemiBold.ttf) format('ttf');
-        font-weight: 600;
-}
-@font-face {
-    font-family: 'Inter';
-    src: local('Inter'),
-        url(../fonts/Inter-Bold.ttf) format('ttf');
-        font-weight: 700;
-}
+// @font-face {
+//     font-family: 'Inter';
+//     src: local('Inter'),
+//         url(../fonts/Inter-Regular.ttf) format('ttf');
+//         font-weight: 400;
+// }
+// @font-face {
+//     font-family: 'Inter';
+//     src: local('Inter'),
+//         url(../fonts/Inter-Medium.ttf) format('ttf');
+//         font-weight: 500;
+// }
+// @font-face {
+//     font-family: 'Inter';
+//     src: local('Inter'),
+//         url(../fonts/Inter-SemiBold.ttf) format('ttf');
+//         font-weight: 600;
+// }
+// @font-face {
+//     font-family: 'Inter';
+//     src: local('Inter'),
+//         url(../fonts/Inter-Bold.ttf) format('ttf');
+//         font-weight: 700;
+// }
 @import '_vari.scss';
 
 *{
@@ -30,7 +30,7 @@
     padding: 0;
 }
 body {
-    font-family: 'Inter', 'Arial', sans-serif;
+    font-family: 'Inter', sans-serif;
     color: $text1;
 }
 .container {
@@ -75,15 +75,18 @@ body {
 .title {
     font-size: 36px;
     font-weight: 700;
-    letter-spacing: .58px;
+
 }
 .subtitle {
     font-size: 28px;
     font-weight: 600;
-    letter-spacing: .6px;
+
     
 }
 //margins
+.mb_6 {
+    margin-bottom: 6px;
+}
 .mb_8 {
     margin-bottom: 8px;
 }
@@ -178,12 +181,32 @@ body {
         }
         
     }
+    &__select {
+        appearance: none;
+       
+       &__wrapper {
+        position: relative;
+        &::after {
+            content: '';
+            width: 10px;
+            height: 10px;
+            display: block;
+            background: url(../img/arrow_select.svg) no-repeat center;
+            background-size: contain;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 16px;
+        }
+       }
+    }
     &__label {
         position: absolute;
         top: 13px;
         left: 16px;
         color: $text2;
         font-size: 12px;
+        z-index: 1;
     }
     .form__input:focus ~ label {
         top: 8px;

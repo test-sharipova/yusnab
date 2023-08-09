@@ -21,14 +21,43 @@ window.addEventListener('DOMContentLoaded', () => {
             prevArrow: '<button type="button" class="slick-prev"><img src="img/prev.svg"></button>',
             nextArrow: '<button type="button" class="slick-next"><img src="img/next.svg"></button>',
         });
-   
-      //меняется отображение лейбла у инпута в форме при фокусе и выборе
-    const selects = document.querySelectorAll('.select');
+        var slider = $('.about__slider');
+        $('.sl-count__total').text( slider.slick("getSlick").slideCount);
+        slider.on("afterChange", function(event , slick , currentSlide) {
+            $('.sl-count__current').text(currentSlide + 1);
+        });
 
-    selects.forEach(select => {
-    select.addEventListener('focus', () => {
-        
-        select.classList.add('select_active');
+    //table popup
+  $('.table__row__photo').magnificPopup({
+    delegate: 'a',
+    type: 'image',
+    tLoading: 'Загрузка изображения #%curr%...',
+    gallery: {
+        enabled: true,
+        navigateByImgClick: true,
+        preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+    }
     });
-});
+//map gallery popup
+    $('.map__gallery').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        tLoading: 'Загрузка изображения #%curr%...',
+        gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+        }
+        });
+    
+    
+      //меняется отображение лейбла у инпута в форме при фокусе и выборе
+//     const selects = document.querySelectorAll('.select');
+
+//     selects.forEach(select => {
+//     select.addEventListener('focus', () => {
+        
+//         select.classList.add('select_active');
+//     });
+// });
 });

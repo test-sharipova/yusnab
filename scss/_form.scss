@@ -10,7 +10,7 @@
     }
     .gray {
         max-width: 700px;
-        letter-spacing: .6px;
+     
     }
     &__wrapper {
         display: flex;
@@ -46,7 +46,8 @@ resize: none;
         margin-top: 20px;
         a {
             color: #8E8E93;
-            text-decoration: none;
+            text-decoration: underline;
+            text-underline-offset: 2px;
         }
     }
     .btn {
