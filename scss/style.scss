@@ -164,6 +164,7 @@ body {
             &_active {
                 label {
                     top: 8px;
+                    transform: translateY(0);
                     font-size: 12px;
                 }
             }
@@ -172,7 +173,8 @@ body {
     }
     &__select {
         appearance: none;
-       
+       padding-top: 8px;
+       color: $text2;
        &__wrapper {
         position: relative;
         &::after {
@@ -187,36 +189,37 @@ body {
             transform: translateY(-50%);
             right: 16px;
         }
-        &::before {
+        // &::before {
            
-            color: $text2;
-            font-size: 14px;
-            position: absolute;
-            top: 19px;
-            left: 16px;
-            transition: all .3s;
-        }
-        &_gosst {
-            &::before {
-                content: 'ГОСТ, ОСТ, ТУ'
-            }
-        }
-        &_marka {
-            &::before {
-                content: 'Марка стали'
-            }
-        }
-        &_active {
-            &::before {
-                top: 8px;
-                font-size: 12px;
-            }
-        }
+        //     color: $text2;
+        //     font-size: 14px;
+        //     position: absolute;
+        //     top: 19px;
+        //     left: 16px;
+        //     transition: all .3s;
+        // }
+        // &_gosst {
+        //     &::before {
+        //         content: 'ГОСТ, ОСТ, ТУ'
+        //     }
+        // }
+        // &_marka {
+        //     &::before {
+        //         content: 'Марка стали'
+        //     }
+        // }
+        // &_active {
+        //     &::before {
+        //         top: 8px;
+        //         font-size: 12px;
+        //     }
+        // }
        }
     }
     &__label {
         position: absolute;
-        top: 19px;
+       top: 50%;
+       transform: translateY(-50%);
         left: 16px;
         color: $text2;
         font-size: 14px;
@@ -227,8 +230,16 @@ body {
 }
 .form__input:focus ~ label {
     top: 8px;
+    transform: translateY(0);
     transition: all .3s;
     font-size: 12px;
+}
+option {
+    padding: 0 8px;
+    display: block;
+    &:hover {
+        color: $blue;
+    }
 }
 
 

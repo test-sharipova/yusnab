@@ -49,6 +49,17 @@ window.addEventListener('DOMContentLoaded', () => {
             preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
         }
         });
+//sertificat popup
+    $('.prov__wrapper').magnificPopup({
+      delegate: 'a',
+      type: 'image',
+      tLoading: 'Загрузка изображения #%curr%...',
+      gallery: {
+          enabled: true,
+          navigateByImgClick: true,
+          preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+      }
+      });
     
   //меняется стили label при заполненности инпут
 
@@ -84,4 +95,7 @@ $('input').change(function() {
     $('.overlay, .modal').fadeOut();
     
 });
+
+//select 
+
 });

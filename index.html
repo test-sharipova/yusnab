@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css"</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span>/&gt;</span>
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.min.css">
     
@@ -108,9 +108,9 @@
                     </div>
                     <div class="form__input__wrapper">
                         
-                        <div class="form__select__wrapper form__select__wrapper_gosst">
+                        <div class="form__select__wrapper">
                             <select class="form__input form__select">
-                                <option value="" selected></option>
+                                <option value="all" selected>ГОСТ, ОСТ, ТУ</option>
                                 <option value="8732-78">8732-78</option>
                                 <option value="8732-78">8732-78</option>
                                 <option value="8732-78">8732-78</option>
@@ -119,9 +119,9 @@
                     </div>
                     <div class="form__input__wrapper">
                         
-                        <div class="form__select__wrapper form__select__wrapper_marka">
+                        <div class="form__select__wrapper">
                             <select class="form__input form__select">
-                                <option value="" selected></option>
+                                <option value="all" selected>Марка стали</option>
                                 <option value="8732-78">30ХГСА</option>
                                 <option value="8732-78">8732-78</option>
                                 <option value="8732-78">30ХГСА</option>
@@ -524,30 +524,30 @@
                     <div class="prov__logo"><img src="img/prov__logo3.png" alt="Логотип поставщика"></div>
                 </div>
                 <div class="prov__wrapper">
-                    <div class="prov__item">
+                    <a href="img/prov_sert.png" class="prov__item" rel="alternate">
                        <div class="prov__sert mb_24">
-                        <img src="img/prov_sert1.png" alt="Сертификат.">
+                        <img src="img/prov_sert.png" alt="Сертификат.">
                        </div>
                         <p class="gray fs_14 lh_171">Cертификат соответствия на продукцию</p>
-                    </div>
-                    <div class="prov__item">
+                    </a>
+                    <a href="img/prov_sert.png" class="prov__item">
                         <div class="prov__sert mb_24">
-                            <img src="img/prov_sert2.png" alt="Сертификат.">
+                            <img src="img/prov_sert.png" alt="Сертификат.">
                            </div>
                         <p class="gray fs_14 lh_171">Cертификат соответствия на продукцию</p>
-                    </div>
-                    <div class="prov__item">
+                    </a>
+                    <a href="img/prov_sert.png" class="prov__item">
                         <div class="prov__sert mb_24">
-                            <img src="img/prov_sert3.png" alt="Сертификат.">
+                            <img src="img/prov_sert.png" alt="Сертификат.">
                            </div>
                         <p class="gray fs_14 lh_171">Cертификат соответствия на продукцию</p>
-                    </div>
-                    <div class="prov__item">
+                    </a>
+                    <a href="img/prov_sert.png" class="prov__item">
                         <div class="prov__sert mb_24">
-                            <img src="img/prov_sert4.png" alt="Сертификат.">
+                            <img src="img/prov_sert.png" alt="Сертификат.">
                            </div>
                         <p class="gray fs_14 lh_171">Cертификат соответствия на продукцию</p>
-                    </div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -788,10 +788,21 @@
             </div>
            </form>
     </div>
-
+    <select class="beatu-select" data-description="Selected..." name="select1">
+        <option value="1">Select 1</option>
+      <option value="2">Select 2</option>
+          <option value="1">Select 3</option>
+      <option value="2">Select 4</option>
+          <option value="1">Select 5</option>
+      <option value="2">Select 6</option>
+          <option value="1">Select 7</option>
+      <option value="2">Select 8</option>
+      
+    </select>
 
     <script src="js/jquery-3.6.3.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/select2.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
 </body>
