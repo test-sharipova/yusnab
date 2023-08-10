@@ -33,13 +33,9 @@ transform: translate(-50%, -50%);
 textarea {
     resize: none;
     height: 204px;
-    flex-grow: 1;
+   padding-top: 51px;
 }
-// .form__label {
-//     top: 10px;
-    
-    
-// }
+
 .policy {
     color: $text2;
     a {

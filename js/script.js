@@ -209,8 +209,11 @@ $('.select2').each(function() {
 //заказ
 $('.consult_order').each(function(i) {
     $(this).on('click', function() {
-        $('.form__textarea').val($('.order_name').eq(i).text() + 'x' + $('.order_diametr').eq(i).text() + ',' + $('.order_gosst').eq(i).text() + ',' + $('.order_gosst').eq(i).text());
+        $('.form__input__order').val($('.order_name').eq(i).text() + 'x' + $('.order_diametr').eq(i).text() + ',' + $('.order_gosst').eq(i).text() + ',' + $('.order_gosst').eq(i).text());
         $('.overlay, .modal').fadeIn('slow');
     });
   });
+  $('.remove__input').click(function(){
+    $('.form__input__order__wrap').remove();
+  })
 });

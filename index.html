@@ -795,7 +795,13 @@
                         <label class="form__label" for="email2">Введите электронную почту</label>
                     </div>
                 </div>
-                <textarea class="form__input form__textarea" placeholder="Введите состав заказа"></textarea>
+                <div class="form__textarea__wrapper">
+                    <div class="form__input__order__wrap">
+                        <input type="text" class="form__input__order" disabled>
+                        <button type="button" class="remove__input"><img src="img/close.svg" alt="remove input"></button>
+                    </div>
+                    <textarea class="form__input form__textarea"></textarea>
+                </div>
             </div>
             <div class="form__wrapper form__wrapper2">
                 <p class="policy">Отправляя форму, вы даёте <a href="#">согласие на обработку своих данных</a></p>

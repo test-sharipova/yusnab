@@ -54,4 +54,48 @@ resize: none;
         width: 221px;
 height: 52px;
     }
+    &__textarea__wrapper {
+        position: relative;
+        flex-grow: 1;
+        textarea {
+            width: 100%;
+            font-size: 14px;
+            font-family: 'Inter';
+        }
+    }
+    &__input {
+        &__order {
+            
+            
+            border-radius: 3px;
+            background: #FFF;
+            padding: 8px 12px;
+            font-size: 14px;
+            color: $text2;
+            border: none;
+            width: 275px;
+            &__wrap {
+                position: absolute;
+                top: 10px;
+            left: 16px;
+            }
+        }
+    }
+}
+.remove__input {
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: #fff;
+    img {
+        width: 100%;
+        display: block;
+        object-fit: contain;
+    }
+
 }
