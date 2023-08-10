@@ -207,13 +207,40 @@ $('.select2').each(function() {
 });
 
 //заказ
+// $(function() {
+	
+//     var newElems = $("<div class='form__input__order__wrap'></div>")
+//         .append("<input class='form__input__order' disabled>")
+//         .append("<button type='button' class='remove__input'>&times;</button>");
+    
+    
+    
+//     $('.form__textarea__wrapper').append(newElems); 
+	
+// });
+
 $('.consult_order').each(function(i) {
     $(this).on('click', function() {
+        var newElems = $("<div class='form__input__order__wrap'></div>")
+        .append("<input class='form__input__order' disabled>")
+        .append("<button type='button' class='remove__input'><img src='img/close.svg' alt='remove input'></button>");
+    
+    
+    
+    $('.form__textarea__wrapper').append(newElems); 
+
+
         $('.form__input__order').val($('.order_name').eq(i).text() + 'x' + $('.order_diametr').eq(i).text() + ',' + $('.order_gosst').eq(i).text() + ',' + $('.order_gosst').eq(i).text());
         $('.overlay, .modal_order').fadeIn('slow');
+       
+        $('.remove__input').click(function(){
+          
+            $('.form__input__order__wrap').remove();
+            
+        });
     });
+
+    
   });
-  $('.remove__input').click(function(){
-    $('.form__input__order__wrap').remove();
-  })
+    
 });
