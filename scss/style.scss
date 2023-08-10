@@ -1,27 +1,4 @@
-// @font-face {
-//     font-family: 'Inter';
-//     src: local('Inter'),
-//         url(../fonts/Inter-Regular.ttf) format('ttf');
-//         font-weight: 400;
-// }
-// @font-face {
-//     font-family: 'Inter';
-//     src: local('Inter'),
-//         url(../fonts/Inter-Medium.ttf) format('ttf');
-//         font-weight: 500;
-// }
-// @font-face {
-//     font-family: 'Inter';
-//     src: local('Inter'),
-//         url(../fonts/Inter-SemiBold.ttf) format('ttf');
-//         font-weight: 600;
-// }
-// @font-face {
-//     font-family: 'Inter';
-//     src: local('Inter'),
-//         url(../fonts/Inter-Bold.ttf) format('ttf');
-//         font-weight: 700;
-// }
+
 @import '_vari.scss';
 
 *{
@@ -59,16 +36,22 @@ body {
     font-size: 16px;
     cursor: pointer;
     &:hover {
-        opacity: .75;
+       background: #2492FF;
+    }
+    &:active {
+        background: #1078DF;
     }
     &_transparent {
         background: transparent;
         border: 1px solid $blue;
         color: $blue;
         &:hover {
-            opacity: 1;
+           
             background: $blue;
             color: #fff;
+        }
+        &:active {
+            background: #1078DF;
         }
     }
 }
@@ -261,6 +244,7 @@ body {
 @import '_form.scss';
 @import '_map';
 @import '_footer';
+@import '_modal.scss';
 
 @import '_media.scss';
 

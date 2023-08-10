@@ -87,6 +87,11 @@
             margin-top: 3px;
             cursor: pointer;
         }
+        &:hover {
+            &::after {
+                background: url(../img/table__info2.svg) no-repeat center;
+            }
+        }
     }
     .btn_more {
         width: 100%;

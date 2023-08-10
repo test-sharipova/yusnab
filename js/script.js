@@ -74,4 +74,14 @@ $('input').change(function() {
       el.removeClass('form__select__wrapper_active');
     }
   });
+
+  //modal 
+  $('.consult').on('click', function() {
+    $('.overlay, .modal').fadeIn();
+});
+
+  $('.modal__close, .overlay').on('click', function() {
+    $('.overlay, .modal').fadeOut();
+    
+});
 });
