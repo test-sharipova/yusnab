@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css"</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span>/&gt;</span>
+    
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.min.css">
     
@@ -106,7 +106,7 @@
                         <label class="form__label" for="tol">Толщина стенки</label>
                         
                     </div>
-                    <div class="form__input__wrapper">
+                    <!-- <div class="form__input__wrapper">
                         
                         <div class="form__select__wrapper">
                             <select class="form__input form__select">
@@ -116,19 +116,34 @@
                                 <option value="8732-78">8732-78</option>
                             </select>
                         </div>
-                    </div>
-                    <div class="form__input__wrapper">
+                    </div> -->
+                    <select class="select2">
+                        <option value="all" disabled>ГОСТ, ОСТ, ТУ</option>
+                        <option value="all" selected>ГОСТ, ОСТ, ТУ</option>
+                        <option value="8732-78">8732-78</option>
+                        <option value="8732-78">8732-78</option>
+                        <option value="8732-78">8732-78</option>
+                    </select>
                         
-                        <div class="form__select__wrapper">
-                            <select class="form__input form__select">
-                                <option value="all" selected>Марка стали</option>
+                        
+                            <select class="select">
+                                <option value="all" disabled>Марка стали</option>
+                                <option value="8732-78">30ХГСА</option>
+                                <option value="8732-78">8732-78</option>
+                                <option value="8732-78">30ХГСА</option>
                                 <option value="8732-78">30ХГСА</option>
                                 <option value="8732-78">8732-78</option>
                                 <option value="8732-78">30ХГСА</option>
                             </select>
-                        </div>
-                    </div>
+                        
+                   
                     <button class="btn" type="submit">Показать</button>
+                    <button type="submit" href="#" class="btn btn_load">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        
+                    </button>
                 </form>
                </div>
                <div class="table__table">
@@ -788,17 +803,7 @@
             </div>
            </form>
     </div>
-    <select class="beatu-select" data-description="Selected..." name="select1">
-        <option value="1">Select 1</option>
-      <option value="2">Select 2</option>
-          <option value="1">Select 3</option>
-      <option value="2">Select 4</option>
-          <option value="1">Select 5</option>
-      <option value="2">Select 6</option>
-          <option value="1">Select 7</option>
-      <option value="2">Select 8</option>
-      
-    </select>
+   
 
     <script src="js/jquery-3.6.3.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>

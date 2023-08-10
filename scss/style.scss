@@ -54,6 +54,7 @@ body {
             background: #1078DF;
         }
     }
+    
 }
 .title {
     font-size: 36px;
@@ -173,7 +174,7 @@ body {
     }
     &__select {
         appearance: none;
-       padding-top: 8px;
+       padding: 8px 0;
        color: $text2;
        &__wrapper {
         position: relative;
@@ -234,12 +235,99 @@ body {
     transition: all .3s;
     font-size: 12px;
 }
-option {
-    padding: 0 8px;
+//select 
+.select {
     display: block;
-    &:hover {
-        color: $blue;
-    }
+    max-width: 215px;
+    
+    position: relative;
+}
+
+.new-select {
+    position: relative;
+     padding: 18px 16px;
+    color: $text2;
+    cursor: pointer;
+    user-select: none;
+    border: none;
+    width: 100%;
+    width: 221px;
+    height: 52px;
+        font-size: 14px;
+        background: #ededed;
+        border-radius: 6px;
+        border: none;
+       
+        &:active {
+            background: #fff;
+            outline: 1px solid $blue;
+        }
+   
+}
+
+.new-select__list {
+    position: absolute;
+    top: 52px;
+    left: 0;
+
+    cursor: pointer;
+    width: 100%;
+    z-index: 2;
+    
+    user-select: none;
+    overflow-y: scroll;
+    border-radius: 6px;
+background: #FFF;
+box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.15);
+height: 116px;
+&::-webkit-scrollbar {
+    width: 3px;
+    height: 100%;
+    
+  }
+&::-webkit-scrollbar-track {
+    background: #D9D9D9;
+  }
+&::-webkit-scrollbar-thumb {
+    background-color: #2B2B2B;
+    border-radius: 3px;
+  }
+}
+
+.new-select__list.on {
+    display: block;
+    background: #fff;
+    outline: 1px solid $blue;
+}
+
+.new-select__item span {
+    display: block;
+    padding: 16px 16px 0;
+    
+}
+
+.new-select__item span:hover {
+    color: $blue;
+}
+
+.new-select:after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url(../img/arrow_select.svg) no-repeat center / contain;
+   
+}
+
+.new-select.on:after {
+   top: 24%;
+    transform: rotate(180deg) translateY(-50%);
+           
+   
 }
 
 
@@ -256,6 +344,7 @@ option {
 @import '_map';
 @import '_footer';
 @import '_modal.scss';
+@import '_loader.scss';
 
 @import '_media.scss';
 
