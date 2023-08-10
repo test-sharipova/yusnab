@@ -92,7 +92,7 @@ $('input').change(function() {
 });
 
   $('.modal__close, .overlay').on('click', function() {
-    $('.overlay, .modal').fadeOut();
+    $('.overlay, .modal, .modal_order').fadeOut();
     
 });
 
@@ -210,7 +210,7 @@ $('.select2').each(function() {
 $('.consult_order').each(function(i) {
     $(this).on('click', function() {
         $('.form__input__order').val($('.order_name').eq(i).text() + 'x' + $('.order_diametr').eq(i).text() + ',' + $('.order_gosst').eq(i).text() + ',' + $('.order_gosst').eq(i).text());
-        $('.overlay, .modal').fadeIn('slow');
+        $('.overlay, .modal_order').fadeIn('slow');
     });
   });
   $('.remove__input').click(function(){

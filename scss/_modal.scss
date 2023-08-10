@@ -9,7 +9,7 @@
     background: #000;
     z-index: 100;
 }
-.modal {
+.modal, .modal_order {
     .subtitle {
         line-height: 123%;
     }
@@ -33,7 +33,9 @@ transform: translate(-50%, -50%);
 textarea {
     resize: none;
     height: 204px;
-   padding-top: 51px;
+   padding-top: 18px;
+   flex-grow: 1;
+   font-family: 'Inter';
 }
 
 .policy {
@@ -50,4 +52,9 @@ textarea {
 .gray {
     max-width: 745px;
 }
+}
+.modal_order {
+    textarea {
+        padding-top: 51px;
+    }
 }
