@@ -1,3 +1,10 @@
+@media screen and (max-width:1570px) {
+   .about {
+    .slider-counter {
+        right: 15.5%;
+    }
+   }
+}
 @media screen and (max-width:1442px) {
     .header {
         &__wrapper {
@@ -59,6 +66,16 @@
     .modal {
         width: auto;
     }
+   
+}
+@media screen and (max-width:1439px) {
+    .about {
+        .slider-counter {
+            right: 12.5%;
+            top: 12%;
+        }
+       }
+    
 }
 @media screen and (max-width:1023px) {
     .price {
@@ -96,6 +113,12 @@
             gap: 16px;
         }
     }
+    .about {
+        .slider-counter {
+            right: 34.5%;
+            top: 35.5%;
+        }
+       }
 }
 @media screen and (max-width:768px) {
     .desktop {
@@ -279,6 +302,7 @@
         }
         &__img {
             width: 100%;
+            height: auto;
         }
         &__row {
             grid-template-columns: 1fr 1fr;
@@ -296,6 +320,10 @@
             flex-wrap: wrap;
             gap: 16px;
             padding: 24px;
+        }
+        .slider-counter {
+            right: 25.5%;
+            top: 34%;
         }
     }
     .form {
@@ -315,10 +343,15 @@
         }
     }
     .map {
+        .title {
+            left: 0;
+        }
         &__block {
             width: 100%;
             height: auto;
             padding: 16px;
+            left: 0;
+            
             .wrapper {
                 flex-wrap: wrap;
                 gap: 8px;
