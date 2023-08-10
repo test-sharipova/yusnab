@@ -50,14 +50,28 @@ window.addEventListener('DOMContentLoaded', () => {
         }
         });
     
-    
-      //меняется отображение лейбла у инпута в форме при фокусе и выборе
-//     const selects = document.querySelectorAll('.select');
+  //меняется стили label при заполненности инпут
 
-//     selects.forEach(select => {
-//     select.addEventListener('focus', () => {
-        
-//         select.classList.add('select_active');
-//     });
-// });
+$('input').change(function() {
+    let el = $(this).parent();
+    if ($(this).val()) {
+      el.addClass('form__input__wrapper_active');
+    
+    } 
+    else {
+    
+      el.removeClass('form__input__wrapper_active');
+    }
+  });
+  $('select').change(function() {
+    let el = $(this).parent();
+    if ($(this).val()) {
+      el.addClass('form__select__wrapper_active');
+    
+    } 
+    else {
+    
+      el.removeClass('form__select__wrapper_active');
+    }
+  });
 });

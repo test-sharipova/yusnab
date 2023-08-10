@@ -178,6 +178,12 @@ body {
             }
         &__wrapper {
             position: relative;
+            &_active {
+                label {
+                    top: 8px;
+                    font-size: 12px;
+                }
+            }
         }
         
     }
@@ -198,21 +204,51 @@ body {
             transform: translateY(-50%);
             right: 16px;
         }
+        &::before {
+           
+            color: $text2;
+            font-size: 14px;
+            position: absolute;
+            top: 19px;
+            left: 16px;
+            transition: all .3s;
+        }
+        &_gosst {
+            &::before {
+                content: 'ГОСТ, ОСТ, ТУ'
+            }
+        }
+        &_marka {
+            &::before {
+                content: 'Марка стали'
+            }
+        }
+        &_active {
+            &::before {
+                top: 8px;
+                font-size: 12px;
+            }
+        }
        }
     }
     &__label {
         position: absolute;
-        top: 13px;
+        top: 19px;
         left: 16px;
         color: $text2;
-        font-size: 12px;
+        font-size: 14px;
         z-index: 1;
+        
     }
-    .form__input:focus ~ label {
-        top: 8px;
-        transition: all .3s;
-    }
+    
 }
+.form__input:focus ~ label {
+    top: 8px;
+    transition: all .3s;
+    font-size: 12px;
+}
+
+
 
 @import '_header.scss';
 @import '_promo.scss';

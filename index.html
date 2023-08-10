@@ -95,18 +95,20 @@
                 </h2>
                 <form action="#" class="table__form">
                     <div class="form__input__wrapper">
+                       
+                        <input class="form__input" type="text" id="diametr" placeholder="">
                         <label class="form__label" for="diametr">Диаметр</label>
-                        <input class="form__input" type="text" id="diametr">
                         
                     </div>
                     <div class="form__input__wrapper">
+                        
+                        <input class="form__input" type="text" id="tol" placeholder="">
                         <label class="form__label" for="tol">Толщина стенки</label>
-                        <input class="form__input" type="text" id="tol">
                         
                     </div>
                     <div class="form__input__wrapper">
-                        <div class="form__label">ГОСТ, ОСТ, ТУ</div>
-                        <div class="form__select__wrapper">
+                        
+                        <div class="form__select__wrapper form__select__wrapper_gosst">
                             <select class="form__input form__select">
                                 <option value="" selected></option>
                                 <option value="8732-78">8732-78</option>
@@ -116,8 +118,8 @@
                         </div>
                     </div>
                     <div class="form__input__wrapper">
-                        <div class="form__label">Марка стали</div>
-                        <div class="form__select__wrapper">
+                        
+                        <div class="form__select__wrapper form__select__wrapper_marka">
                             <select class="form__input form__select">
                                 <option value="" selected></option>
                                 <option value="8732-78">30ХГСА</option>
@@ -732,6 +734,7 @@
                 </div>
             
         </section>
+    </main>
         <footer>
             <div class="container">
                 
@@ -751,7 +754,11 @@
                 </div>
             </div>
         </footer>
-    </main>
+    <!-- modal  -->
+    <div class="overlay"></div>
+    <div class="modal">
+        
+    </div>
 
 
     <script src="js/jquery-3.6.3.min.js"></script>
