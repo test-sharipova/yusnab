@@ -18,12 +18,14 @@
     &__slider {
         width: 568px;
         margin-top: 11px;
-        
+        &__wrap {
+            position: relative;
+        }
     }
     .slider-counter {
         position: absolute;
-        right: 20.5%;
-        top: 15%;
+        right: 14.5%;
+        top: 16%;
         color: #fff;
         z-index: 100;
         font-size: 18px;

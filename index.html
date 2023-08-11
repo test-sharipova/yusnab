@@ -25,7 +25,12 @@
             <div class="container">
                 <div class="header__nav__wrap">
                     <ul class="menu">
-                        <li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
+                        <div class="mobile header__head">
+                            <a href="#" class="logo mobile">
+                                <img src="img/logo.svg" alt="ЮжуралСнаб">
+                            </a>
+                        </div>
+                        <li class="menu__item first"><a href="#" class="menu__link">Главная</a></li>
                         <li class="menu__item"><a href="#" class="menu__link">Продукция</a></li>
                         <li class="menu__item"><a href="#" class="menu__link">Преимущества</a></li>
                         <li class="menu__item"><a href="#" class="menu__link">Услуги</a></li>
@@ -33,6 +38,18 @@
                         <li class="menu__item"><a href="#" class="menu__link">Сертификаты</a></li>
                         <li class="menu__item"><a href="#" class="menu__link">О компании</a></li>
                         <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+                        <div class="mobile header__menu__cont">
+                            <div class="wrapper_start">
+                                <a href="tel:+73513512219" class="header__phone">+ 7 (351) 351-22-19</a>
+                            <ul class="soc">
+                                <li><a href="#"><img src="img/viber.svg" alt="Vieber"></a></li>
+                                <li><a href="#"><img src="img/tg.svg" alt="telegram"></a></li>
+                                <li><a href="#"><img src="img/whatsapp.svg" alt="whatsapp"></a></li>
+                            </ul>
+                            </div>
+                            <a href="mailto:mail@8732.su" class="header__mail"><span>Пишите на почту</span>mail@8732.su</a>
+                            <a href="#" class="header__download2">Скачать актуальный прайс-лист</a>
+                        </div>
                     </ul>
                     <a href="#" class="logo mobile">
                         <img src="img/logo.svg" alt="ЮжуралСнаб">
@@ -42,6 +59,9 @@
                         <span></span>
                         <span></span>
                     </div>
+                   
+                    
+                   
                     <a class="header__download desktop" href="#"> 
                         <div class="header__download__img">
                             <img src="img/arrow_down.svg" alt="Скачать">
@@ -53,7 +73,7 @@
         </nav>
         <div class="container">
             
-            <div class="header__wrapper">
+            <div class="header__wrapper desktop">
                 <a href="#" class="logo desktop">
                     <img src="img/logo.svg" alt="ЮжуралСнаб">
                 </a>
@@ -90,9 +110,12 @@
         <section class="table">
             <div class="container">
                <div class="table__filter">
-                <h2 class="title">
-                    Продукция на складе
-                </h2>
+                <div class="table__title__wrap">
+                    <h2 class="title">
+                        <span>249,07 тн.</span> в наличии на складе
+                    </h2>
+                    <p class="gray fs_15">Обновляется 2 раза в день.</p>
+                </div>
                 <form action="#" class="table__form">
                     <div class="form__input__wrapper">
                        
@@ -160,265 +183,276 @@
                         
                     </div>
                     <div class="table__row">
-                        <div class="mobile fs_14 gray">Фото</div>
+                        
                         <div class="table__row__photo">
                             <a href="img/about__img.png" rel="alternate">
                                 <img src="img/about__img.png" alt="">
                             </a> 
                             
+                            
                         </div>
-                        <div class="mobile fs_14 gray">Вид металла</div>
-                        <p class="fs_16 order_name">Труба 299 </p>
-                        <div class="mobile fs_14 gray">Диаметр</div>
-                        <p class="fs_16">299</p>
-                        <div class="mobile fs_14 gray">Толщина</div>
-                        <p class="fs_16 order_diametr">60</p>
-                        <div class="mobile fs_14 gray">ГОСТ, ОСТ, ТУ</div>
-                        <p class="fs_16 order_gosst">8732-78 </p>
-                        <div class="mobile fs_14 gray">Марка</div>
-                        <p class="fs_16 order_marka">30ХГСА</p>
-                        <div class="mobile fs_14 gray">Наличие</div>
-                        <p class="fs_16">6.726 тн.</p>
-                        <div class="mobile fs_14 gray">Цена</div>
                         
-                        <p class="fs_16">275 000 руб</p>
-                        <div class="mobile fs_14 gray">Заказ</div>
+                        <p class="fs_16 order_name">Труба 299х60<span class="mobile">, гост 8732-78, <br> марка 30ХГСА</span> </p>
+                        
+                        <p class="fs_16 desktop">299</p>
+                        
+                        <p class="fs_16 order_diametr desktop">60</p>
+                        
+                        <p class="fs_16 order_gosst desktop">8732-78 </p>
+                        
+                        <p class="fs_16 order_marka desktop">30ХГСА</p>
+                        
+                        <p class="fs_16 table__row__tn">6.726 тн. <span class="mobile">в наличии</span></p>
+                                                
+                        <p class="fs_16 table__row__price">275 000 руб</p>
+                        
                         <button type="button" class="btn btn_transparent consult_order">Заказать</button>
                     </div>
                     <div class="table__row">
-                        <div class="mobile fs_14 gray">Фото</div>
+                        
                         <div class="table__row__photo">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" viewBox="0 0 24 20" fill="none">
                                 <path d="M21.1304 3.47826H18.6261L17.2435 1.30435C16.7217 0.48913 15.8087 0 14.8696 0H9.13043C8.1913 0 7.27826 0.48913 6.75652 1.30435L5.37391 3.47826H2.86957C1.27826 3.47826 0 4.80978 0 6.46739V17.0109C0 18.6685 1.27826 20 2.86957 20H21.1304C22.7217 20 24 18.6685 24 17.0109V6.46739C24 4.80978 22.7217 3.47826 21.1304 3.47826ZM12 17.5543C8.42609 17.5543 5.53044 14.538 5.53044 10.8152C5.53044 7.09239 8.42609 4.10326 12 4.10326C15.5739 4.10326 18.4696 7.11957 18.4696 10.8424C18.4696 14.538 15.5739 17.5543 12 17.5543ZM20.7652 7.69022C20.7391 7.69022 20.713 7.69022 20.6609 7.69022H19.6174C19.1478 7.66304 18.7826 7.25543 18.8087 6.7663C18.8348 6.30435 19.1739 5.95109 19.6174 5.92391H20.6609C21.1304 5.89674 21.5217 6.27717 21.5478 6.7663C21.5739 7.25543 21.2348 7.66304 20.7652 7.69022Z" fill="#D6D6D6"/>
                                 <path d="M12 7.09239C10.0174 7.09239 8.4 8.77717 8.4 10.8424C8.4 12.9076 10.0174 14.5652 12 14.5652C13.9826 14.5652 15.6 12.8804 15.6 10.8152C15.6 8.75 13.9826 7.09239 12 7.09239Z" fill="#D6D6D6"/>
-                                </svg>
+                            </svg>
+                            
+                            
                         </div>
-                        <div class="mobile fs_14 gray">Вид металла</div>
-                        <p class="fs_16 order_name">Труба 298 </p>
-                        <div class="mobile fs_14 gray">Диаметр</div>
-                        <p class="fs_16">299</p>
-                        <div class="mobile fs_14 gray">Толщина</div>
-                        <p class="fs_16 order_diametr">60</p>
-                        <div class="mobile fs_14 gray">ГОСТ, ОСТ, ТУ</div>
-                        <p class="fs_16 order_gosst">8732-78 </p>
-                        <div class="mobile fs_14 gray">Марка</div>
-                        <p class="fs_16 order_marka">30ХГСА</p>
-                        <div class="mobile fs_14 gray">Наличие</div>
-                        <p class="fs_16">6.726 тн.</p>
-                        <div class="mobile fs_14 gray">Цена</div>
                         
-                        <p class="fs_16">275 000 руб</p>
-                        <div class="mobile fs_14 gray">Заказ</div>
+                        <p class="fs_16 order_name">Труба 299х60<span class="mobile">, гост 8732-78, <br> марка 30ХГСА</span> </p>
+                        
+                        <p class="fs_16 desktop">299</p>
+                        
+                        <p class="fs_16 order_diametr desktop">60</p>
+                        
+                        <p class="fs_16 order_gosst desktop">8732-78 </p>
+                        
+                        <p class="fs_16 order_marka desktop">30ХГСА</p>
+                        
+                        <p class="fs_16 table__row__tn">6.726 тн. <span class="mobile">в наличии</span></p>
+                                                
+                        <p class="fs_16 table__row__price">275 000 руб</p>
+                        
                         <button type="button" class="btn btn_transparent consult_order">Заказать</button>
                     </div>
                     <div class="table__row">
-                        <div class="mobile fs_14 gray">Фото</div>
+                        
                         <div class="table__row__photo">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" viewBox="0 0 24 20" fill="none">
                                 <path d="M21.1304 3.47826H18.6261L17.2435 1.30435C16.7217 0.48913 15.8087 0 14.8696 0H9.13043C8.1913 0 7.27826 0.48913 6.75652 1.30435L5.37391 3.47826H2.86957C1.27826 3.47826 0 4.80978 0 6.46739V17.0109C0 18.6685 1.27826 20 2.86957 20H21.1304C22.7217 20 24 18.6685 24 17.0109V6.46739C24 4.80978 22.7217 3.47826 21.1304 3.47826ZM12 17.5543C8.42609 17.5543 5.53044 14.538 5.53044 10.8152C5.53044 7.09239 8.42609 4.10326 12 4.10326C15.5739 4.10326 18.4696 7.11957 18.4696 10.8424C18.4696 14.538 15.5739 17.5543 12 17.5543ZM20.7652 7.69022C20.7391 7.69022 20.713 7.69022 20.6609 7.69022H19.6174C19.1478 7.66304 18.7826 7.25543 18.8087 6.7663C18.8348 6.30435 19.1739 5.95109 19.6174 5.92391H20.6609C21.1304 5.89674 21.5217 6.27717 21.5478 6.7663C21.5739 7.25543 21.2348 7.66304 20.7652 7.69022Z" fill="#D6D6D6"/>
                                 <path d="M12 7.09239C10.0174 7.09239 8.4 8.77717 8.4 10.8424C8.4 12.9076 10.0174 14.5652 12 14.5652C13.9826 14.5652 15.6 12.8804 15.6 10.8152C15.6 8.75 13.9826 7.09239 12 7.09239Z" fill="#D6D6D6"/>
-                                </svg>
+                            </svg>
+                            
+                            
                         </div>
-                        <div class="mobile fs_14 gray">Вид металла</div>
-                        <p class="fs_16 order_name">Труба 297 </p>
-                        <div class="mobile fs_14 gray">Диаметр</div>
-                        <p class="fs_16">299</p>
-                        <div class="mobile fs_14 gray">Толщина</div>
-                        <p class="fs_16 order_diametr">60</p>
-                        <div class="mobile fs_14 gray">ГОСТ, ОСТ, ТУ</div>
-                        <p class="fs_16 order_gosst">8732-78 </p>
-                        <div class="mobile fs_14 gray">Марка</div>
-                        <p class="fs_16 order_marka">30ХГСА</p>
-                        <div class="mobile fs_14 gray">Наличие</div>
-                        <p class="fs_16">6.726 тн.</p>
-                        <div class="mobile fs_14 gray">Цена</div>
                         
-                        <p class="fs_16">275 000 руб</p>
-                        <div class="mobile fs_14 gray">Заказ</div>
+                        <p class="fs_16 order_name">Труба 299х60<span class="mobile">, гост 8732-78, <br> марка 30ХГСА</span> </p>
+                        
+                        <p class="fs_16 desktop">299</p>
+                        
+                        <p class="fs_16 order_diametr desktop">60</p>
+                        
+                        <p class="fs_16 order_gosst desktop">8732-78 </p>
+                        
+                        <p class="fs_16 order_marka desktop">30ХГСА</p>
+                        
+                        <p class="fs_16 table__row__tn">6.726 тн. <span class="mobile">в наличии</span></p>
+                                                
+                        <p class="fs_16 table__row__price">275 000 руб</p>
+                        
                         <button type="button" class="btn btn_transparent consult_order">Заказать</button>
                     </div>
                     <div class="table__row">
-                        <div class="mobile fs_14 gray">Фото</div>
+                        
                         <div class="table__row__photo">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" viewBox="0 0 24 20" fill="none">
                                 <path d="M21.1304 3.47826H18.6261L17.2435 1.30435C16.7217 0.48913 15.8087 0 14.8696 0H9.13043C8.1913 0 7.27826 0.48913 6.75652 1.30435L5.37391 3.47826H2.86957C1.27826 3.47826 0 4.80978 0 6.46739V17.0109C0 18.6685 1.27826 20 2.86957 20H21.1304C22.7217 20 24 18.6685 24 17.0109V6.46739C24 4.80978 22.7217 3.47826 21.1304 3.47826ZM12 17.5543C8.42609 17.5543 5.53044 14.538 5.53044 10.8152C5.53044 7.09239 8.42609 4.10326 12 4.10326C15.5739 4.10326 18.4696 7.11957 18.4696 10.8424C18.4696 14.538 15.5739 17.5543 12 17.5543ZM20.7652 7.69022C20.7391 7.69022 20.713 7.69022 20.6609 7.69022H19.6174C19.1478 7.66304 18.7826 7.25543 18.8087 6.7663C18.8348 6.30435 19.1739 5.95109 19.6174 5.92391H20.6609C21.1304 5.89674 21.5217 6.27717 21.5478 6.7663C21.5739 7.25543 21.2348 7.66304 20.7652 7.69022Z" fill="#D6D6D6"/>
                                 <path d="M12 7.09239C10.0174 7.09239 8.4 8.77717 8.4 10.8424C8.4 12.9076 10.0174 14.5652 12 14.5652C13.9826 14.5652 15.6 12.8804 15.6 10.8152C15.6 8.75 13.9826 7.09239 12 7.09239Z" fill="#D6D6D6"/>
-                                </svg>
+                            </svg>
+                            
+                            
                         </div>
-                        <div class="mobile fs_14 gray">Вид металла</div>
-                        <p class="fs_16 order_name">Труба 299 </p>
-                        <div class="mobile fs_14 gray">Диаметр</div>
-                        <p class="fs_16">299</p>
-                        <div class="mobile fs_14 gray">Толщина</div>
-                        <p class="fs_16 order_diametr">60</p>
-                        <div class="mobile fs_14 gray">ГОСТ, ОСТ, ТУ</div>
-                        <p class="fs_16 order_gosst">8732-78 </p>
-                        <div class="mobile fs_14 gray">Марка</div>
-                        <p class="fs_16 order_marka">30ХГСА</p>
-                        <div class="mobile fs_14 gray">Наличие</div>
-                        <p class="fs_16">6.726 тн.</p>
-                        <div class="mobile fs_14 gray">Цена</div>
                         
-                        <p class="fs_16">275 000 руб</p>
-                        <div class="mobile fs_14 gray">Заказ</div>
+                        <p class="fs_16 order_name">Труба 299х60<span class="mobile">, гост 8732-78, <br> марка 30ХГСА</span> </p>
+                        
+                        <p class="fs_16 desktop">299</p>
+                        
+                        <p class="fs_16 order_diametr desktop">60</p>
+                        
+                        <p class="fs_16 order_gosst desktop">8732-78 </p>
+                        
+                        <p class="fs_16 order_marka desktop">30ХГСА</p>
+                        
+                        <p class="fs_16 table__row__tn">6.726 тн. <span class="mobile">в наличии</span></p>
+                                                
+                        <p class="fs_16 table__row__price">275 000 руб</p>
+                        
                         <button type="button" class="btn btn_transparent consult_order">Заказать</button>
                     </div>
                     <div class="table__row">
-                        <div class="mobile fs_14 gray">Фото</div>
+                        
                         <div class="table__row__photo">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" viewBox="0 0 24 20" fill="none">
                                 <path d="M21.1304 3.47826H18.6261L17.2435 1.30435C16.7217 0.48913 15.8087 0 14.8696 0H9.13043C8.1913 0 7.27826 0.48913 6.75652 1.30435L5.37391 3.47826H2.86957C1.27826 3.47826 0 4.80978 0 6.46739V17.0109C0 18.6685 1.27826 20 2.86957 20H21.1304C22.7217 20 24 18.6685 24 17.0109V6.46739C24 4.80978 22.7217 3.47826 21.1304 3.47826ZM12 17.5543C8.42609 17.5543 5.53044 14.538 5.53044 10.8152C5.53044 7.09239 8.42609 4.10326 12 4.10326C15.5739 4.10326 18.4696 7.11957 18.4696 10.8424C18.4696 14.538 15.5739 17.5543 12 17.5543ZM20.7652 7.69022C20.7391 7.69022 20.713 7.69022 20.6609 7.69022H19.6174C19.1478 7.66304 18.7826 7.25543 18.8087 6.7663C18.8348 6.30435 19.1739 5.95109 19.6174 5.92391H20.6609C21.1304 5.89674 21.5217 6.27717 21.5478 6.7663C21.5739 7.25543 21.2348 7.66304 20.7652 7.69022Z" fill="#D6D6D6"/>
                                 <path d="M12 7.09239C10.0174 7.09239 8.4 8.77717 8.4 10.8424C8.4 12.9076 10.0174 14.5652 12 14.5652C13.9826 14.5652 15.6 12.8804 15.6 10.8152C15.6 8.75 13.9826 7.09239 12 7.09239Z" fill="#D6D6D6"/>
-                                </svg>
+                            </svg>
+                            
+                            
                         </div>
-                        <div class="mobile fs_14 gray">Вид металла</div>
-                        <p class="fs_16 order_name">Труба 299 </p>
-                        <div class="mobile fs_14 gray">Диаметр</div>
-                        <p class="fs_16">299</p>
-                        <div class="mobile fs_14 gray">Толщина</div>
-                        <p class="fs_16 order_diametr">60</p>
-                        <div class="mobile fs_14 gray">ГОСТ, ОСТ, ТУ</div>
-                        <p class="fs_16 order_gosst">8732-78 </p>
-                        <div class="mobile fs_14 gray">Марка</div>
-                        <p class="fs_16 order_marka">30ХГСА</p>
-                        <div class="mobile fs_14 gray">Наличие</div>
-                        <p class="fs_16">6.726 тн.</p>
-                        <div class="mobile fs_14 gray">Цена</div>
                         
-                        <p class="fs_16">275 000 руб</p>
-                        <div class="mobile fs_14 gray">Заказ</div>
+                        <p class="fs_16 order_name">Труба 299х60<span class="mobile">, гост 8732-78, <br> марка 30ХГСА</span> </p>
+                        
+                        <p class="fs_16 desktop">299</p>
+                        
+                        <p class="fs_16 order_diametr desktop">60</p>
+                        
+                        <p class="fs_16 order_gosst desktop">8732-78 </p>
+                        
+                        <p class="fs_16 order_marka desktop">30ХГСА</p>
+                        
+                        <p class="fs_16 table__row__tn">6.726 тн. <span class="mobile">в наличии</span></p>
+                                                
+                        <p class="fs_16 table__row__price">275 000 руб</p>
+                        
                         <button type="button" class="btn btn_transparent consult_order">Заказать</button>
                     </div>
                     <div class="table__row">
-                        <div class="mobile fs_14 gray">Фото</div>
+                        
                         <div class="table__row__photo">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" viewBox="0 0 24 20" fill="none">
                                 <path d="M21.1304 3.47826H18.6261L17.2435 1.30435C16.7217 0.48913 15.8087 0 14.8696 0H9.13043C8.1913 0 7.27826 0.48913 6.75652 1.30435L5.37391 3.47826H2.86957C1.27826 3.47826 0 4.80978 0 6.46739V17.0109C0 18.6685 1.27826 20 2.86957 20H21.1304C22.7217 20 24 18.6685 24 17.0109V6.46739C24 4.80978 22.7217 3.47826 21.1304 3.47826ZM12 17.5543C8.42609 17.5543 5.53044 14.538 5.53044 10.8152C5.53044 7.09239 8.42609 4.10326 12 4.10326C15.5739 4.10326 18.4696 7.11957 18.4696 10.8424C18.4696 14.538 15.5739 17.5543 12 17.5543ZM20.7652 7.69022C20.7391 7.69022 20.713 7.69022 20.6609 7.69022H19.6174C19.1478 7.66304 18.7826 7.25543 18.8087 6.7663C18.8348 6.30435 19.1739 5.95109 19.6174 5.92391H20.6609C21.1304 5.89674 21.5217 6.27717 21.5478 6.7663C21.5739 7.25543 21.2348 7.66304 20.7652 7.69022Z" fill="#D6D6D6"/>
                                 <path d="M12 7.09239C10.0174 7.09239 8.4 8.77717 8.4 10.8424C8.4 12.9076 10.0174 14.5652 12 14.5652C13.9826 14.5652 15.6 12.8804 15.6 10.8152C15.6 8.75 13.9826 7.09239 12 7.09239Z" fill="#D6D6D6"/>
-                                </svg>
+                            </svg>
+                            
+                            
                         </div>
-                        <div class="mobile fs_14 gray">Вид металла</div>
-                        <p class="fs_16 order_name">Труба 299 </p>
-                        <div class="mobile fs_14 gray">Диаметр</div>
-                        <p class="fs_16">299</p>
-                        <div class="mobile fs_14 gray">Толщина</div>
-                        <p class="fs_16 order_diametr">60</p>
-                        <div class="mobile fs_14 gray">ГОСТ, ОСТ, ТУ</div>
-                        <p class="fs_16 order_gosst">8732-78 </p>
-                        <div class="mobile fs_14 gray">Марка</div>
-                        <p class="fs_16 order_marka">30ХГСА</p>
-                        <div class="mobile fs_14 gray">Наличие</div>
-                        <p class="fs_16">6.726 тн.</p>
-                        <div class="mobile fs_14 gray">Цена</div>
                         
-                        <p class="fs_16">275 000 руб</p>
-                        <div class="mobile fs_14 gray">Заказ</div>
+                        <p class="fs_16 order_name">Труба 299х60<span class="mobile">, гост 8732-78, <br> марка 30ХГСА</span> </p>
+                        
+                        <p class="fs_16 desktop">299</p>
+                        
+                        <p class="fs_16 order_diametr desktop">60</p>
+                        
+                        <p class="fs_16 order_gosst desktop">8732-78 </p>
+                        
+                        <p class="fs_16 order_marka desktop">30ХГСА</p>
+                        
+                        <p class="fs_16 table__row__tn">6.726 тн. <span class="mobile">в наличии</span></p>
+                                                
+                        <p class="fs_16 table__row__price">275 000 руб</p>
+                        
                         <button type="button" class="btn btn_transparent consult_order">Заказать</button>
                     </div>
                     <div class="table__row">
-                        <div class="mobile fs_14 gray">Фото</div>
+                        
                         <div class="table__row__photo">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" viewBox="0 0 24 20" fill="none">
                                 <path d="M21.1304 3.47826H18.6261L17.2435 1.30435C16.7217 0.48913 15.8087 0 14.8696 0H9.13043C8.1913 0 7.27826 0.48913 6.75652 1.30435L5.37391 3.47826H2.86957C1.27826 3.47826 0 4.80978 0 6.46739V17.0109C0 18.6685 1.27826 20 2.86957 20H21.1304C22.7217 20 24 18.6685 24 17.0109V6.46739C24 4.80978 22.7217 3.47826 21.1304 3.47826ZM12 17.5543C8.42609 17.5543 5.53044 14.538 5.53044 10.8152C5.53044 7.09239 8.42609 4.10326 12 4.10326C15.5739 4.10326 18.4696 7.11957 18.4696 10.8424C18.4696 14.538 15.5739 17.5543 12 17.5543ZM20.7652 7.69022C20.7391 7.69022 20.713 7.69022 20.6609 7.69022H19.6174C19.1478 7.66304 18.7826 7.25543 18.8087 6.7663C18.8348 6.30435 19.1739 5.95109 19.6174 5.92391H20.6609C21.1304 5.89674 21.5217 6.27717 21.5478 6.7663C21.5739 7.25543 21.2348 7.66304 20.7652 7.69022Z" fill="#D6D6D6"/>
                                 <path d="M12 7.09239C10.0174 7.09239 8.4 8.77717 8.4 10.8424C8.4 12.9076 10.0174 14.5652 12 14.5652C13.9826 14.5652 15.6 12.8804 15.6 10.8152C15.6 8.75 13.9826 7.09239 12 7.09239Z" fill="#D6D6D6"/>
-                                </svg>
+                            </svg>
+                            
+                            
                         </div>
-                        <div class="mobile fs_14 gray">Вид металла</div>
-                        <p class="fs_16 order_name">Труба 299 </p>
-                        <div class="mobile fs_14 gray">Диаметр</div>
-                        <p class="fs_16">299</p>
-                        <div class="mobile fs_14 gray">Толщина</div>
-                        <p class="fs_16 order_diametr">60</p>
-                        <div class="mobile fs_14 gray">ГОСТ, ОСТ, ТУ</div>
-                        <p class="fs_16 order_gosst">8732-78 </p>
-                        <div class="mobile fs_14 gray">Марка</div>
-                        <p class="fs_16 order_marka">30ХГСА</p>
-                        <div class="mobile fs_14 gray">Наличие</div>
-                        <p class="fs_16">6.726 тн.</p>
-                        <div class="mobile fs_14 gray">Цена</div>
                         
-                        <p class="fs_16">275 000 руб</p>
-                        <div class="mobile fs_14 gray">Заказ</div>
+                        <p class="fs_16 order_name">Труба 299х60<span class="mobile">, гост 8732-78, <br> марка 30ХГСА</span> </p>
+                        
+                        <p class="fs_16 desktop">299</p>
+                        
+                        <p class="fs_16 order_diametr desktop">60</p>
+                        
+                        <p class="fs_16 order_gosst desktop">8732-78 </p>
+                        
+                        <p class="fs_16 order_marka desktop">30ХГСА</p>
+                        
+                        <p class="fs_16 table__row__tn">6.726 тн. <span class="mobile">в наличии</span></p>
+                                                
+                        <p class="fs_16 table__row__price">275 000 руб</p>
+                        
                         <button type="button" class="btn btn_transparent consult_order">Заказать</button>
                     </div>
                     <div class="table__row">
-                        <div class="mobile fs_14 gray">Фото</div>
+                        
                         <div class="table__row__photo">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" viewBox="0 0 24 20" fill="none">
                                 <path d="M21.1304 3.47826H18.6261L17.2435 1.30435C16.7217 0.48913 15.8087 0 14.8696 0H9.13043C8.1913 0 7.27826 0.48913 6.75652 1.30435L5.37391 3.47826H2.86957C1.27826 3.47826 0 4.80978 0 6.46739V17.0109C0 18.6685 1.27826 20 2.86957 20H21.1304C22.7217 20 24 18.6685 24 17.0109V6.46739C24 4.80978 22.7217 3.47826 21.1304 3.47826ZM12 17.5543C8.42609 17.5543 5.53044 14.538 5.53044 10.8152C5.53044 7.09239 8.42609 4.10326 12 4.10326C15.5739 4.10326 18.4696 7.11957 18.4696 10.8424C18.4696 14.538 15.5739 17.5543 12 17.5543ZM20.7652 7.69022C20.7391 7.69022 20.713 7.69022 20.6609 7.69022H19.6174C19.1478 7.66304 18.7826 7.25543 18.8087 6.7663C18.8348 6.30435 19.1739 5.95109 19.6174 5.92391H20.6609C21.1304 5.89674 21.5217 6.27717 21.5478 6.7663C21.5739 7.25543 21.2348 7.66304 20.7652 7.69022Z" fill="#D6D6D6"/>
                                 <path d="M12 7.09239C10.0174 7.09239 8.4 8.77717 8.4 10.8424C8.4 12.9076 10.0174 14.5652 12 14.5652C13.9826 14.5652 15.6 12.8804 15.6 10.8152C15.6 8.75 13.9826 7.09239 12 7.09239Z" fill="#D6D6D6"/>
-                                </svg>
+                            </svg>
+                            
+                            
                         </div>
-                        <div class="mobile fs_14 gray">Вид металла</div>
-                        <p class="fs_16 order_name">Труба 299 </p>
-                        <div class="mobile fs_14 gray">Диаметр</div>
-                        <p class="fs_16">299</p>
-                        <div class="mobile fs_14 gray">Толщина</div>
-                        <p class="fs_16 order_diametr">60</p>
-                        <div class="mobile fs_14 gray">ГОСТ, ОСТ, ТУ</div>
-                        <p class="fs_16 order_gosst">8732-78 </p>
-                        <div class="mobile fs_14 gray">Марка</div>
-                        <p class="fs_16 order_marka">30ХГСА</p>
-                        <div class="mobile fs_14 gray">Наличие</div>
-                        <p class="fs_16">6.726 тн.</p>
-                        <div class="mobile fs_14 gray">Цена</div>
                         
-                        <p class="fs_16">275 000 руб</p>
-                        <div class="mobile fs_14 gray">Заказ</div>
+                        <p class="fs_16 order_name">Труба 299х60<span class="mobile">, гост 8732-78, <br> марка 30ХГСА</span> </p>
+                        
+                        <p class="fs_16 desktop">299</p>
+                        
+                        <p class="fs_16 order_diametr desktop">60</p>
+                        
+                        <p class="fs_16 order_gosst desktop">8732-78 </p>
+                        
+                        <p class="fs_16 order_marka desktop">30ХГСА</p>
+                        
+                        <p class="fs_16 table__row__tn">6.726 тн. <span class="mobile">в наличии</span></p>
+                                                
+                        <p class="fs_16 table__row__price">275 000 руб</p>
+                        
                         <button type="button" class="btn btn_transparent consult_order">Заказать</button>
                     </div>
                     <div class="table__row">
-                        <div class="mobile fs_14 gray">Фото</div>
+                        
                         <div class="table__row__photo">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" viewBox="0 0 24 20" fill="none">
                                 <path d="M21.1304 3.47826H18.6261L17.2435 1.30435C16.7217 0.48913 15.8087 0 14.8696 0H9.13043C8.1913 0 7.27826 0.48913 6.75652 1.30435L5.37391 3.47826H2.86957C1.27826 3.47826 0 4.80978 0 6.46739V17.0109C0 18.6685 1.27826 20 2.86957 20H21.1304C22.7217 20 24 18.6685 24 17.0109V6.46739C24 4.80978 22.7217 3.47826 21.1304 3.47826ZM12 17.5543C8.42609 17.5543 5.53044 14.538 5.53044 10.8152C5.53044 7.09239 8.42609 4.10326 12 4.10326C15.5739 4.10326 18.4696 7.11957 18.4696 10.8424C18.4696 14.538 15.5739 17.5543 12 17.5543ZM20.7652 7.69022C20.7391 7.69022 20.713 7.69022 20.6609 7.69022H19.6174C19.1478 7.66304 18.7826 7.25543 18.8087 6.7663C18.8348 6.30435 19.1739 5.95109 19.6174 5.92391H20.6609C21.1304 5.89674 21.5217 6.27717 21.5478 6.7663C21.5739 7.25543 21.2348 7.66304 20.7652 7.69022Z" fill="#D6D6D6"/>
                                 <path d="M12 7.09239C10.0174 7.09239 8.4 8.77717 8.4 10.8424C8.4 12.9076 10.0174 14.5652 12 14.5652C13.9826 14.5652 15.6 12.8804 15.6 10.8152C15.6 8.75 13.9826 7.09239 12 7.09239Z" fill="#D6D6D6"/>
-                                </svg>
+                            </svg>
+                            
+                            
                         </div>
-                        <div class="mobile fs_14 gray">Вид металла</div>
-                        <p class="fs_16 order_name">Труба 299 </p>
-                        <div class="mobile fs_14 gray">Диаметр</div>
-                        <p class="fs_16">299</p>
-                        <div class="mobile fs_14 gray">Толщина</div>
-                        <p class="fs_16 order_diametr">60</p>
-                        <div class="mobile fs_14 gray">ГОСТ, ОСТ, ТУ</div>
-                        <p class="fs_16 order_gosst">8732-78 </p>
-                        <div class="mobile fs_14 gray">Марка</div>
-                        <p class="fs_16 order_marka">30ХГСА</p>
-                        <div class="mobile fs_14 gray">Наличие</div>
-                        <p class="fs_16">6.726 тн.</p>
-                        <div class="mobile fs_14 gray">Цена</div>
                         
-                        <p class="fs_16">275 000 руб</p>
-                        <div class="mobile fs_14 gray">Заказ</div>
+                        <p class="fs_16 order_name">Труба 299х60<span class="mobile">, гост 8732-78, <br> марка 30ХГСА</span> </p>
+                        
+                        <p class="fs_16 desktop">299</p>
+                        
+                        <p class="fs_16 order_diametr desktop">60</p>
+                        
+                        <p class="fs_16 order_gosst desktop">8732-78 </p>
+                        
+                        <p class="fs_16 order_marka desktop">30ХГСА</p>
+                        
+                        <p class="fs_16 table__row__tn">6.726 тн. <span class="mobile">в наличии</span></p>
+                                                
+                        <p class="fs_16 table__row__price">275 000 руб</p>
+                        
                         <button type="button" class="btn btn_transparent consult_order">Заказать</button>
                     </div>
                     <div class="table__row">
-                        <div class="mobile fs_14 gray">Фото</div>
+                        
                         <div class="table__row__photo">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" viewBox="0 0 24 20" fill="none">
                                 <path d="M21.1304 3.47826H18.6261L17.2435 1.30435C16.7217 0.48913 15.8087 0 14.8696 0H9.13043C8.1913 0 7.27826 0.48913 6.75652 1.30435L5.37391 3.47826H2.86957C1.27826 3.47826 0 4.80978 0 6.46739V17.0109C0 18.6685 1.27826 20 2.86957 20H21.1304C22.7217 20 24 18.6685 24 17.0109V6.46739C24 4.80978 22.7217 3.47826 21.1304 3.47826ZM12 17.5543C8.42609 17.5543 5.53044 14.538 5.53044 10.8152C5.53044 7.09239 8.42609 4.10326 12 4.10326C15.5739 4.10326 18.4696 7.11957 18.4696 10.8424C18.4696 14.538 15.5739 17.5543 12 17.5543ZM20.7652 7.69022C20.7391 7.69022 20.713 7.69022 20.6609 7.69022H19.6174C19.1478 7.66304 18.7826 7.25543 18.8087 6.7663C18.8348 6.30435 19.1739 5.95109 19.6174 5.92391H20.6609C21.1304 5.89674 21.5217 6.27717 21.5478 6.7663C21.5739 7.25543 21.2348 7.66304 20.7652 7.69022Z" fill="#D6D6D6"/>
                                 <path d="M12 7.09239C10.0174 7.09239 8.4 8.77717 8.4 10.8424C8.4 12.9076 10.0174 14.5652 12 14.5652C13.9826 14.5652 15.6 12.8804 15.6 10.8152C15.6 8.75 13.9826 7.09239 12 7.09239Z" fill="#D6D6D6"/>
-                                </svg>
+                            </svg>
+                            
+                            
                         </div>
-                        <div class="mobile fs_14 gray">Вид металла</div>
-                        <p class="fs_16 order_name">Труба 299 </p>
-                        <div class="mobile fs_14 gray">Диаметр</div>
-                        <p class="fs_16">299</p>
-                        <div class="mobile fs_14 gray">Толщина</div>
-                        <p class="fs_16 order_diametr">60</p>
-                        <div class="mobile fs_14 gray">ГОСТ, ОСТ, ТУ</div>
-                        <p class="fs_16 order_gosst">8732-78 </p>
-                        <div class="mobile fs_14 gray">Марка</div>
-                        <p class="fs_16 order_marka">30ХГСА</p>
-                        <div class="mobile fs_14 gray">Наличие</div>
-                        <p class="fs_16">6.726 тн.</p>
-                        <div class="mobile fs_14 gray">Цена</div>
                         
-                        <p class="fs_16">275 000 руб</p>
-                        <div class="mobile fs_14 gray">Заказ</div>
+                        <p class="fs_16 order_name">Труба 299х60<span class="mobile">, гост 8732-78, <br> марка 30ХГСА</span> </p>
+                        
+                        <p class="fs_16 desktop">299</p>
+                        
+                        <p class="fs_16 order_diametr desktop">60</p>
+                        
+                        <p class="fs_16 order_gosst desktop">8732-78 </p>
+                        
+                        <p class="fs_16 order_marka desktop">30ХГСА</p>
+                        
+                        <p class="fs_16 table__row__tn">6.726 тн. <span class="mobile">в наличии</span></p>
+                                                
+                        <p class="fs_16 table__row__price">275 000 руб</p>
+                        
                         <button type="button" class="btn btn_transparent consult_order">Заказать</button>
                     </div>
+                    
+                  
                </div>
                <a href="#" class="btn btn_transparent btn_more">Показать больше предложений</a>
             </div>
@@ -518,7 +552,7 @@
                     </div>
                     <form action="#" class="serv__quest__contact">
                         <p class="fs_14">Или позвоните нам</p>
-                        <p class="fs_20 fw_600">Заказ звонка</p>
+                        <p class="fs_20 fw_600 desktop">Заказ звонка</p>
                         <a href="tel:+73513512219" class="serv__quest__phone">+ 7 (351) 351-22-19</a>
                         <div class="form__input__wrapper">
                             <input class="form__input" type="text" id="order" placeholder="">
@@ -534,9 +568,16 @@
             <div class="container">
                 <div class="prov__wrapper">
                     <h2 class="title">Наши поставщики</h2>
-                    <div class="prov__logo"><img src="img/prov__logo.png" alt="Логотип поставщика"></div>
+                    
+                    <div class="prov__logo desktop"><img src="img/prov__logo.png" alt="Логотип поставщика"></div>
+                    <div class="prov__logo desktop"><img src="img/prov__logo2.png" alt="Логотип поставщика"></div>
+                    <div class="prov__logo desktop"><img src="img/prov__logo3.png" alt="Логотип поставщика"></div>
+                
+                    <div class="prov__post__wrap mobile">
+                        <div class="prov__logo"><img src="img/prov__logo.png" alt="Логотип поставщика"></div>
                     <div class="prov__logo"><img src="img/prov__logo2.png" alt="Логотип поставщика"></div>
                     <div class="prov__logo"><img src="img/prov__logo3.png" alt="Логотип поставщика"></div>
+                    </div>
                 </div>
                 <div class="prov__wrapper">
                     <a href="img/prov_sert.png" class="prov__item" rel="alternate">
@@ -571,51 +612,53 @@
                 <div class="about__wrapper">
                     <div class="about__content">
                         <div class="title mb_36">О компании</div>
-                        <p class="gray fs_18 lh_155 mb_24">
+                        <p class="gray fs_18 lh_155 mb_24 about__text">
                             Наша компания предлагает широкий сортамент трубной и сортовой продукции различных заводов-производителей в наличии со склада,а профессиональные менеджеры помогут Вам не только по конкретной заявке, но и проконсультируют по заменам, если нужной позиции нет на складе.
                         </p>
-                        <p class="gray fs_18 lh_155">
+                        <p class="gray fs_18 lh_155 about__text">
                            Мы постоянно обновляем свой сортамент, а также завозим продукцию под постоянных клиентов, чтоб Вам не пришлось ждать заказа с завода 30-45 дней.
                         </p>
                     </div>
-                    <div class="about__slider">
-                        <div>
-                            <div class="about__img">
-                                <img src="img/map__img.png" alt="photo">
-                                <div class="about__slider__logo">
-                                    <img src="img/slider-logo.svg" alt="ЮжуралСнаб">
+                    <div class="about__slider__wrap">
+                        <div class="about__slider">
+                            <div>
+                                <div class="about__img">
+                                    <img src="img/map__img.png" alt="photo">
+                                    <div class="about__slider__logo">
+                                        <img src="img/slider-logo.svg" alt="ЮжуралСнаб">
+                                    </div>
+                                    
+                                    
                                 </div>
                                 
-                                
                             </div>
-                            
-                        </div>
-                        <div>
-                            <div class="about__img">
-                                <img src="img/map__img3.png" alt="photo">
-                                <div class="about__slider__logo">
-                                    <img src="img/slider-logo.svg" alt="ЮжуралСнаб">
+                            <div>
+                                <div class="about__img">
+                                    <img src="img/map__img3.png" alt="photo">
+                                    <div class="about__slider__logo">
+                                        <img src="img/slider-logo.svg" alt="ЮжуралСнаб">
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="about__img">
+                                    <img src="img/map__img2.png" alt="photo">
+                                    <div class="about__slider__logo">
+                                        <img src="img/slider-logo.svg" alt="ЮжуралСнаб">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div>
-                            <div class="about__img">
-                                <img src="img/map__img2.png" alt="photo">
-                                <div class="about__slider__logo">
-                                    <img src="img/slider-logo.svg" alt="ЮжуралСнаб">
-                                </div>
+                        <div class="slider-counter">
+                            <div class="sl-count">
+                                <span class="sl-count__current">1</span>/ <span class="sl-count__total"></span>
                             </div>
-                        </div>
-                    </div>
-                    <div class="slider-counter">
-                        <div class="sl-count">
-                            <span class="sl-count__current">1</span>/ <span class="sl-count__total"></span>
                         </div>
                     </div>
                 </div>
                 <div class="about__wrapper mb_40">
                     <h2 class="subtitle">
-                        Реквизиты <br> компании
+                        Реквизиты компании
                     </h2>
                     <div class="about__requisites">
                         <div class="about__row">
@@ -678,7 +721,7 @@
                 <h2 class="title mb_26">
                     Отправьте заявку и узнайте актуальные цены в течение 30 минут
                 </h2>
-                <p class="fs_18 gray lh_155 mb_40">
+                <p class="fs_18 gray lh_155 mb_40 form__text">
                     Подберем трубу под ваши требования и задачи – Дадим развернутую консультацию по ГОСТам и ТУ, диаметрам и стенкам, а также маркам стали
                 </p>
                 <div class="form__wrapper">
@@ -818,16 +861,16 @@
             <div class="form__wrapper">
                 <div class="form__inputs">
                     <div class="form__input__wrapper">
-                        <input class="form__input" type="text" id="name2">
-                        <label class="form__label" for="name2">Введите имя</label>
+                        <input class="form__input" type="text" id="name3">
+                        <label class="form__label" for="name3">Введите имя</label>
                     </div>
                     <div class="form__input__wrapper">
-                        <input class="form__input" type="text" id="phone2">
-                        <label class="form__label" for="phone2">Введите номер</label>
+                        <input class="form__input" type="text" id="phone3">
+                        <label class="form__label" for="phone3">Введите номер</label>
                     </div>
                     <div class="form__input__wrapper">
-                        <input class="form__input" type="text" id="email2">
-                        <label class="form__label" for="email2">Введите электронную почту</label>
+                        <input class="form__input" type="text" id="email3">
+                        <label class="form__label" for="email3">Введите электронную почту</label>
                     </div>
                 </div>
                 <div class="form__textarea__wrapper">

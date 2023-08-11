@@ -1,5 +1,23 @@
 .table {
     padding: 47px 0 60px;
+    &__title__wrap {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        gap: 16px;
+        .gray {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            &:before {
+                content: '';
+                display: block;
+                width: 20px;
+                height: 20px;
+                background: url(../img/clock.svg) no-repeat center / contain;
+            }
+        }
+    }
     &__filter {
         padding: 49px 39px 38px 32px;
         border-radius: 10px;
