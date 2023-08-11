@@ -9,7 +9,7 @@
             margin-bottom: 61px;
         }
         &:nth-child(2) {
-            gap: 158px;
+            gap: 14px;
         }
     }
     &__content {
@@ -94,6 +94,7 @@
     }
     .subtitle {
         line-height: 120%;
+        max-width: 295px;
     }
     &__row {
         display: grid;
