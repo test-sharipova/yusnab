@@ -318,6 +318,7 @@
     
     
     .promo {
+        overflow: hidden;
         img {
             position: relative;
             bottom: 0;
@@ -343,7 +344,8 @@
 
         }
         &__img {
-            width: 185%;
+            width: 227%;
+            right: -88px;
         }
     }
     .table {
