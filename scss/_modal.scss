@@ -39,9 +39,12 @@ textarea {
 }
 
 .policy {
-    color: $text2;
+    color: #8E8E93;
+    font-size: 12px;
+    margin-top: 24px;
+    line-height: 200%;
     a {
-        color: $text2;
+        color: #8E8E93;
         text-underline-offset: 2px;
     }
 }

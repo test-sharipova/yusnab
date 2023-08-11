@@ -23,7 +23,8 @@
         display: flex;
         gap: 12px;
         align-items: center;
-     letter-spacing: -1px;
+     
+     font-size: 14px;
         &:hover {
             color: $blue;
         }
@@ -43,8 +44,9 @@
             border: 1px solid $blue;
             border-radius: 6px;
             text-decoration: none;
-            margin-right: 96px;
+            margin-right: 158px;
             max-width: 274px;
+            width: 210px;
             font-size: 14px;
             text-align: center;
             &:hover {
@@ -72,7 +74,7 @@
         color: $text1;
         margin-right: 48px;
     display: block;
-    letter-spacing: -1.1px;
+   font-size: 14px;
         span {
             color: $text2;
             display: block;

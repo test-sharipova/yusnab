@@ -208,18 +208,7 @@ $('.select2').each(function() {
   });
 });
 
-//заказ
-// $(function() {
-	
-//     var newElems = $("<div class='form__input__order__wrap'></div>")
-//         .append("<input class='form__input__order' disabled>")
-//         .append("<button type='button' class='remove__input'>&times;</button>");
-    
-    
-    
-//     $('.form__textarea__wrapper').append(newElems); 
-	
-// });
+
 
 $('.consult_order').each(function(i) {
     $(this).on('click', function() {
@@ -244,5 +233,17 @@ $('.consult_order').each(function(i) {
 
     
   });
+  //плавный скролл
+  $('.flowing-scroll').on( 'click', function(){ 
+    var el = $(this);
+    var dest = el.attr('href'); 
+    if(dest !== undefined && dest !== '') { 
+        $('html').animate({ 
+    	    scrollTop: $(dest).offset().top 
+        }, 500 
+        );
+    }
+    return false;
+});
     
 });
