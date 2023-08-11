@@ -15,9 +15,11 @@ window.addEventListener('DOMContentLoaded', () => {
         item.addEventListener('click', () => {
             hamburger.classList.toggle('hamburger_active');
             menu.classList.toggle('menu_active');
+            body.classList.toggle('overflow');
         });
     });
 
+   
     
         $('.about__slider').slick({
             prevArrow: '<button type="button" class="slick-prev"><img src="img/prev.svg"></button>',
@@ -243,7 +245,7 @@ $('.consult_order').each(function(i) {
         }, 500 
         );
     }
-    return false;
+    // return false;
 });
     
 });
